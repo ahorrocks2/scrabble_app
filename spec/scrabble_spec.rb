@@ -29,4 +29,8 @@ describe('String#scrabble') do
   it('Returns a score for any ten-point letter') do
     expect(("q").scrabble()).to(eq(10))
   end
+
+  it('Returns score of multiple letters') do
+    expect(("dog").scrabble()).to(eq(5))
+  end
 end
