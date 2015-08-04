@@ -1,5 +1,6 @@
 class String
   define_method(:scrabble) do
+    self.downcase!()
     one_pointers = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"]
     three_pointers = ["b", "c", "m", "p"]
     four_pointers = ["f", "h", "v", "w", "y"]
