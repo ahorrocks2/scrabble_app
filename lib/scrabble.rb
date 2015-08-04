@@ -1,5 +1,11 @@
-class Fixnum
+class String
   define_method(:scrabble) do
-    #code
+    tile = self
+    if tile == "a"
+      tile = 1
+    else
+      tile = 2
+    end
+    tile
   end
 end
